@@ -8,3 +8,85 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.main-header {
+    position: relative;
+    background-color: #0f0f0f;
+    height: 50px;
+}
+
+.logo {
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.button, button {
+    background-color: cadetblue;
+    color: #fff;
+    padding: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.button:hover, button:hover {
+    background-color: cornflowerblue;
+    transition: all 200ms ease-in-out;
+}
+
+.main-header .button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    background-color: #eee;
+    color: #0f0f0f;
+    padding: 10px;
+}
+
+form {
+    margin: 30px 0;
+}
+
+form button,
+#card-element {
+    margin-top: 20px;
+}
+
+#payment-form button {
+
+}
+
+footer {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.section {
+    text-align: center;
+}
+
+.section h2 {
+    text-align: left;
+}
+
+.product {
+    display: inline-block;
+    margin: 20px;
+    text-align: left;
+}

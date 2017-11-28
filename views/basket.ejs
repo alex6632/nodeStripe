@@ -1,23 +1,25 @@
 <% include inc/header %>
 
-<h2>Panier</h2>
+<div class="container">
+    <h2>Panier</h2>
 
-<div>Voici un récapitulatif de votre commande :</div>
+    <form action="api/charge" method="post" id="payment-form">
+        <div class="form-row">
+            <label for="card-element">
+                Entrez les données de votre carte bancaire ci-dessous :
+            </label>
+            <div id="card-element">
+                <!-- a Stripe Element will be inserted here. -->
+            </div>
 
-<form action="api/charge" method="post" id="payment-form">
-    <div class="form-row">
-        <label for="card-element">
-            Credit or debit card
-        </label>
-        <div id="card-element">
-            <!-- a Stripe Element will be inserted here. -->
+            <!-- Used to display Element errors -->
+            <div id="card-errors" role="alert"></div>
         </div>
 
-        <!-- Used to display Element errors -->
-        <div id="card-errors" role="alert"></div>
-    </div>
+        <button>Submit Payment</button>
+    </form>
 
-    <button>Submit Payment</button>
-</form>
+    <a href="/">Retour accueil</a>
+</div>
 
 <% include inc/footer %>

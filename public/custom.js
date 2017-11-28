@@ -2,19 +2,9 @@ const stripe = Stripe('pk_test_YWR4lvgKIKUlFKiHoG8LP9Nw');
 const elements = stripe.elements();
 const style = {
   base: {
-    color: '#000',
-    lineHeight: '18px',
-    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-    fontSmoothing: 'antialiased',
     fontSize: '16px',
-    '::placeholder': {
-      color: '#aab7c4'
-    }
+    color: "#32325d",
   },
-  invalid: {
-    color: '#fa755a',
-    iconColor: '#fa755a'
-  }
 };
 
 const card = elements.create('card', {style});
